@@ -1,0 +1,164 @@
+TABELAS.HTML
+
+<!DOCTYPE html>
+<html>
+    <!-- área de cabeçalho (não visual) -->
+    <head>
+        <title>Aula De Front End</title>
+        <meta charset="UTF-8">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+    </head>
+    <style>
+        h3{
+            color:darkblue !important;
+        }
+    </style>
+    <!-- Conteúdo da página -->
+    <body>
+        <header>
+            <p>Seja bem vindo a nossa aula!</p>
+        <a target="_blank" href="https://www.submarino.com.br">SUBMARINO</a>
+        <img src="imagens/logo.png" />
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imagens.html">Imagens</a></li>
+                <li><a href="animacao.html">Animação CSS</a></li>
+                <li><a href="bootstrap.html">BootStrap</a></li>
+                <li><a href="jquery.html">Jquery</a></li>
+                <li><a class="destaqueMenu">Tabelas</a></li>
+                <li><a href="formularios.html">Formulários</a></li>
+                <li><a href="localstorage.html">LocalStorage</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="diagramacao.html">Diagramação</a></li>
+            </ul>
+        </nav>
+        <div class="conteudo">
+        <section>
+            <h1>HTML5 - Tabelas e Coleções</h1>
+            <article>
+                <h2>Coleções</h2>
+                <ul class="musica">
+                    <li>Violão</li>
+                    <li>Guitarra</li>
+                    <li>Violoncelo</li>
+                    <li>Violino</li>
+                    <li id="teclado"><a target="_blank" href="https://www.submarino.com.br/busca/teclado-musical">Teclado</a></li>
+                    <li>Piano</li>
+                    <li>Cavaquinho</li>
+                    <li>Tamborim</li>
+                    <li>Triângulo</li>
+                    <li>Pandeiro</li>
+                    <li>Gaita</li>
+                    <li>Viola</li>
+                    <li>Harpa</li>
+                    <li>Trombone</li>
+                  </ul>
+            </article>
+             
+            <article>
+                <h2>Tabelas - Exemplo 1</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Profissão</th>
+                            <th>Local</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                             <td>Aluísio</td>
+                             <td>Dentista</td>
+                             <td>Recife</td>
+                         </tr>
+                         <tr>
+                            <td>Meire</td>
+                            <td>Atriz</td>
+                            <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                            <td>Joaquim</td>
+                            <td>Escritor</td>
+                            <td>Portugal</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                            Atualizado em 17/05/2021 ás 21:12
+                        </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                
+                <!--Exemplo Tabela Mesclando Linhas -->
+                <h2>Tabelas - Exemplo 2</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Profissão</th>
+                            <th>Local</th>
+                            <th>...</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                             <td>Aluísio</td>
+                             <td>Dentista</td>
+                             <td>Recife</td>
+                             <td rowspan="3">
+                                 <img src="imagens/albert-einstein.jpg" class="w100" />
+                             </td>
+                         </tr>
+                         <tr>
+                            <td>Meire</td>
+                            <td>Atriz</td>
+                            <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                            <td>Joaquim</td>
+                            <td>Escritor</td>
+                            <td>Portugal</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">
+                            Atualizado em 17/05/2021 ás 21:12
+                        </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </article>
+            <article>
+                <h2>Listas Ordenadas e com Marcadores</h2>
+                <h3>Listas Ordenadas</h3>
+                <!-- type A,a,i,I,1 -->
+                <ol type="A">
+                    <li>Alemanha</li>
+                    <li>França</li>
+                    <li>Espanha</li>
+                    <li>Suécia</li>
+                </ol>
+                <hr />
+                <h3>Listas com marcadores</h3>
+                <!-- type disc,circle,square -->
+                <ul type="circle">
+                    <li>Amarelo</li>
+                    <li>Laranja</li>
+                    <li>Verde</li>
+                    <li>Lilás</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+        <footer>
+            <p>&copy;2021 - Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

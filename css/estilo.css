@@ -1,0 +1,518 @@
+/* Comentário */
+
+body, body *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+@keyframes anima01{
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 100vh;
+    }
+}
+
+@keyframes anima02 {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(2.5);
+    }
+}
+
+@keyframes anima03 {
+    0% {
+        right: -45%;
+    }
+    100% {
+        right: 3%;
+    }
+}
+
+@keyframes anima04 {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg)
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+}
+
+.fteudo {
+    width: 80%;
+    margin: 10px auto;
+    /* . é somente para classes */
+}
+
+.destaqueMenu {
+    color: red;
+    font-weight: 700;
+}
+
+.destaqueMenu:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.cantoRedondo {
+    border-radius: 30px;
+}
+
+.circulo {
+    border-radius: 50%;
+}
+
+.mtop {
+    margin-top: 5vh;
+}
+
+.png {
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../imagens/forest-bg.jpg);
+    background-size: cover;
+}
+
+.png img {
+    width: 40%;
+    position:absolute;
+}
+
+.png img:nth-of-type(1) {
+    width: 70%;
+    top: -5vh;
+    right: 0;
+    z-index: 2;
+    /* nth-of-type(1) controla uma imagem especifica da div png */
+}
+
+.png img:nth-of-type(2) {
+    width: 15%;
+    bottom: 0;
+    right: 35%;
+    z-index: 1;
+    /* z-index profundidade de camadas das imagens */
+}
+
+.nave {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.nave img {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    animation: anima01 linear 3s alternate-reverse infinite;
+}
+
+.divulga {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.divulga img:nth-of-type(2) {
+    width: 10%;
+    left: 45%;
+    top: 20%;
+    opacity: 0;
+    animation: anima02 linear 2s forwards;
+    animation-delay: 1s;
+    z-index: 1;
+}
+
+.divulga img:nth-of-type(3) {
+    right: -2%;
+    top: 40%;
+    animation: anima03 2s forwards;
+    animation-delay: 3s;
+}
+
+.divulga img:nth-of-type(1) {
+    animation: anima04 2s linear infinite;
+    width: 3%;
+    top: 65%;
+    left: 40%;
+    opacity: 0;
+    z-index: 2;
+}
+
+ul.musica li:nth-of-type(4) {
+    color: red;
+}
+
+ul.musica li:nth-child(odd) {
+    color: green;
+    font-weight: bold;
+}
+
+li#teclado {
+    border: 1px solid #000;
+    list-style: none;
+    width: 100px;
+    margin: 5x 0;
+    background-color: white;
+    transform: scale(1);
+    transition: all 0.6s;
+}
+
+li#teclado a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+    text-align: center;
+}
+
+li#teclado a:hover {
+    border: 1px solid red;
+    background-color: khaki;
+    transform: scale(1.2);
+}
+
+table {
+    border: 1px solid #999;
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #999;
+}
+
+table th {
+    text-align: left;
+}
+
+table th {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 4px solid black;
+}
+
+table td {
+    padding: 5px 0 5px 1%;
+    width: 25%;
+}
+
+table tr:nth-of-type(1) td{
+    padding: 15px 0 5px 1%;
+}
+
+table tr td:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.divulga img {
+    width: 30%;
+    position: absolute;
+}
+
+ol, ul {
+    padding: 0 0 0 20px ;
+}
+
+header, footer {
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 30vh;
+    background-image: url(../imagens/planoDeFundo/plano6.jpg);
+    background-size: 100%;
+}
+
+footer {
+    margin: 5% 0 0 0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+h1 {
+    letter-spacing: 0.4em;
+    margin: 0 0 50px 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3:before {
+    content: "_";
+    /* before -> content: faz colocar algo antes de todos h3 */
+}
+
+p {
+    line-height: 1.4em;
+}
+
+p:first-letter {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header p {
+    text-align: center;
+    padding: 10px 0 0 0;
+    filter:invert();
+}
+
+header img {
+    width: 30vh;
+    filter:invert(1);
+    display: block;
+    margin: 0 auto;
+}
+
+header a {
+    color: white;
+    font-family: Georgia;
+    font-size: 120%;
+    margin: 0 0 0 5%;
+}
+
+footer p {
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin: 0 1% 0 0;
+    padding: 1%;
+    /* display: inline-block coloca a lista na horizontal */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+    padding: 0.1%;
+}
+
+.a1 .fa-address-card {
+    color: darkblue
+}
+
+.a2 {
+    padding: 30px 0 0 0;
+}
+
+.verde {
+    color: green;
+}
+
+.ex01 img{
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.ex01 p {
+    padding: 3% 0 0 0;
+}
+
+.ex02 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* quebra a barra de rolagem vertical */
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.ex02 img {
+    margin: 1% 1% 1% 1%;
+}
+
+.ex03 {
+    display: flex;
+    flex-direction: row;
+}
+
+.ex03 div {
+    background-color: khaki;
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.ex03 div.bgVerde {
+    background-color: lightgreen !important;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.ex03 div.bgVerde p{
+    margin: 0 0 0 3%;
+}
+
+.clear {
+    clear: left;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+div.c1, div.c2, div.c0 {
+    border: 1px dashed black;
+    padding: 1%;
+    min-height: 200px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+div.c1 span, div.c2 span {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+
+div.c1 p, div.c2 p {
+    margin-bottom: 15px;
+}
+
+div.c3 {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid black;
+}
+
+.menuGaleria {
+    text-align: right;
+}
+
+.menuGaleria a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.c2 input {
+    border-radius: 10px;
+    height: 40px;
+    border: 2px solid black;
+    font-size: 23px;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+    padding: 2%;
+    width: 50px;
+    font-size: 22px;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+
+.estilo1 {
+    color: brown;
+    font: 15px Georgia;
+    text-transform: uppercase;
+}
+
+#anima {
+    border: 2px dashed #999;
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#anima * {
+    position: absolute;
+    left: 90%;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+div#resultado {
+    background-color: cadetblue;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+div#resultado:first-letter, .noCap:first-letter {
+    /* background-color: cadetblue; */
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+/*Responsividade*/
+
+@media (max-width:414px) and (orientation:portrait) {
+    nav ul li{
+        display: block;
+    }
+    ol, ul {
+        padding: 0 0 0 0;
+    }
+    .ex02 {
+        display: flex;
+        flex-direction: column;
+    }
+}

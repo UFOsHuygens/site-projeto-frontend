@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head: Área de cabeçalho (não visual) -->
+<head>
+    <title>Aula de Front End</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+</head>
+
+<style>
+    h3 {
+        color: darkblue !important;
+        /* !important quebra a hierarquia do Inline Style, ou seja: é reproduzido primeiro */
+    }
+</style>
+
+
+<!-- Body: É o conteúdo da pagína (visual) -->
+<body>
+    <header>
+        <p>Seja bem vindo a nossa aula!</p>
+        <!-- target="_blank" faz redirecionar abrindo outra aba -->
+        <a target="_blank" href="https://www.w3schools.com">W3SCHOOLS</a>
+        <img src="imagens/logo.png" />
+    </header>
+
+    <!-- nav: é um conjunto de links de navegação -->
+    <nav>
+        <!-- ul: é uma lista não ordenada -->
+        <ul>
+            <!-- li: componentes da lista -->
+            <li><a class="destaqueMenu">Home</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+            <li><a href="animacao.html">Animação CSS</a></li>
+            <li><a href="bootstrap.html">BootStrap</a></li>
+            <li><a href="jquery.html">Jquery</a></li>
+            <li><a href="tabelas.html">Tabelas</a></li>
+            <li><a href="formularios.html">Formulários</a></li>
+            <li><a href="localstorage.html">LocalStorage</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="diagramacao.html">Diagramação</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo">
+        <section>
+            <h1>HTML5 - Formatação de Texto</h1>
+            <article>
+                <h2>Parágrafos e Texto Pré Formatado</h2>
+                <h3>Parágrafos</h3>
+                <!-- 
+                    mark: marca texto
+                    br: quebra de linha (usa-se com '/')
+                    b: negrito
+                    i: itálico
+                -->
+                <p>
+                    Lorem Ipsum is <mark>simply dummy text</mark> of the printing and
+                    typesetting industry. <br /> Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of <b>type and scrambled</b> it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. <br /> It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with <i>desktop publishing software</i> like Aldus
+                    PageMaker including versions of Lorem Ipsum.
+                </p>
+                <!-- hr: linha horizontal -->
+                <hr />
+                <!--
+                    Exemplo de Estilo Inline, ou seja: o estilo fica
+                    dentro do componente.
+                -->
+                <h3 style="color: brown;">Texto Pré Formatado</h3>
+                <pre>
+                    "A obsessão pelo suicídio é própria de quem <br/>
+                    não pode viver, nem morrer, e cuja atenção nunca <br/>
+                    se afasta dessa dupla impossibilidade."
+                        Emil Cioran.
+                </pre>
+            </article>
+
+            <article>
+                <h2>Listas Ordenadas e com Marcadores</h2>
+                <h3>Lista Ordenadas</h3>
+                <ol type="A">
+                    <li>Alemanha</li>
+                    <li>França</li>
+                    <li>Espanha</li>
+                    <li>Suécia</li>
+                </ol>
+                <!-- hr: linha horizontal -->
+                <hr />
+                <h3>Listas com Marcadores</h3>
+                <ul type='circle'>
+                    <!-- ul: types: (disc, circle, square) -->
+                    <li>Amarelo</li>
+                    <li>Laranja</li>
+                    <li>Verde</li>
+                    <li>Lilás</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2021 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>

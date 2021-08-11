@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head: Área de cabeçalho (não visual) -->
+<head>
+    <title>Aula de Front End</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+</head>
+
+<style>
+    h3 {
+        color: darkblue !important;
+        /* !important quebra a hierarquia do Inline Style, ou seja: é reproduzido primeiro */
+    }
+</style>
+
+
+<!-- Body: É o conteúdo da pagína (visual) -->
+<body>
+    <header>
+        <p>Seja bem vindo a nossa aula!</p>
+        <!-- target="_blank" faz redirecionar abrindo outra aba -->
+        <a target="_blank" href="https://www.w3schools.com">W3SCHOOLS</a>
+        <img src="imagens/logo.png" />
+    </header>
+
+    <!-- nav: é um conjunto de links de navegação -->
+    <nav>
+        <!-- ul: é uma lista não ordenada -->
+        <ul>
+            <!-- li: componentes da lista -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+            <li><a class="destaqueMenu">Animação CSS</a></li>
+            <li><a href="bootstrap.html">BootStrap</a></li>
+            <li><a href="jquery.html">Jquery</a></li>
+            <li><a href="tabelas.html">Tabelas</a></li>
+            <li><a href="formularios.html">Formulários</a></li>
+            <li><a href="localstorage.html">LocalStorage</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="diagramacao.html">Diagramação</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo">
+        <section>
+            <h1>HTML5 - Animação</h1>
+            <article>
+                <h2>Keyframes CSS</h2>
+                <h3>Exemplo 1</h3>
+                <div class="mtop nave">
+                    <img class="w25" src="imagens/img-formatos/rocket.svg"/>
+                </div>
+                <h3>Exemplo 2</h3>
+                <div class="mtop divulga">
+                    <img src="imagens/divulga/close.png"/>
+                    <img src="imagens/divulga/coca-cola-retro.jpg"/>
+                    <img src="imagens/divulga/promocao.png"/>
+                </div>
+            </article>
+
+            <article>
+                <h2>Listas Ordenadas e com Marcadores</h2>
+                <h3>Lista Ordenadas</h3>
+                <ol type="A">
+                    <li>Alemanha</li>
+                    <li>França</li>
+                    <li>Espanha</li>
+                    <li>Suécia</li>
+                </ol>
+                <!-- hr: linha horizontal -->
+                <hr />
+                <h3>Listas com Marcadores</h3>
+                <ul type='circle'>
+                    <!-- ul: types: (disc, circle, square) -->
+                    <li>Amarelo</li>
+                    <li>Laranja</li>
+                    <li>Verde</li>
+                    <li>Lilás</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2021 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
